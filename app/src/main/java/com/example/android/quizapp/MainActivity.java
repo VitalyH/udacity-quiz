@@ -13,6 +13,8 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public void onSaveInstanceState(final Bundle bundle) {
+        // Saving answer on the first question
         TextView questionOneInput = findViewById(R.id.questionOneInput);
         String questionOneUser = questionOneInput.getText().toString();
         bundle.putString("questionOneUser", questionOneUser);
@@ -40,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
          * Restoration after scree rotation
          */
         if (savedInstanceState != null) {
+            // Restoring first answer
             String questionOneNull = savedInstanceState.getString("questionOneUser");;
             TextView questionOneInput = findViewById(R.id.questionOneInput);
             questionOneInput.setText(questionOneNull);
         }
-
 
         /**
          * Floating "Reset" button logic
@@ -53,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Ok, let's try again...", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                String reset = getString(R.string.reset);
+                String action_message = getString(R.string.action_message);
+                Snackbar.make(view, reset, Snackbar.LENGTH_LONG)
+                        .setAction(action_message, null).show();
 
                 // First question reset
                 String questionOneNull = "";
@@ -78,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
                 george.setChecked(false);
                 CheckBox james = findViewById(R.id.james);
                 james.setChecked(false);
+
+                // Fourth question reset
+                RadioGroup fourthRadioGroup = findViewById(R.id.fourthQuestion);
+                fourthRadioGroup.clearCheck();
+
+                // Fifth question reset
+                RadioGroup fifthRadioGroup = findViewById(R.id.fifthQuestion);
+                fifthRadioGroup.clearCheck();
             }
         });
     }
@@ -89,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         int showResult = 0; // Initial number of right answers
         String questionOneCorrect = "Albus"; // Correct answer on the first question
 
-        // First question check
+        // First question
         EditText inputText = findViewById(R.id.questionOneInput);
         String questionOneUser = inputText.getText().toString();
         if (questionOneUser.equals(questionOneCorrect)) {
@@ -97,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Second question
-        // Right answers: Tom and Marvolo
+        // Correct answer: Tom and Marvolo
         CheckBox tom = findViewById(R.id.tom);
         CheckBox john = findViewById(R.id.john);
         CheckBox marvolo = findViewById(R.id.marvolo);
@@ -111,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Third question
-        // Right answers: Lily and James
+        // Correct answer: Lily and James
         CheckBox lily = findViewById(R.id.lily);
         CheckBox liliana = findViewById(R.id.liliana);
         CheckBox george = findViewById(R.id.george);
@@ -127,9 +140,24 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        // Fourth question
+        // Correct answer: Minerva
+        RadioButton minerva = findViewById(R.id.minerva);
+        if (minerva.isChecked()) {
+            showResult = showResult + 1;
+        }
+        // Fifth question
+        // Correct answer: Bellatrix Lestrange
+        RadioButton bellatrix = findViewById(R.id.bellatrix);
+        if (bellatrix.isChecked()) {
+            showResult = showResult + 1;
+        }
+
         // Toast with results
-        Toast.makeText(MainActivity.this, "You got " + showResult +
-                        " questions right!", Toast.LENGTH_LONG).show();
+        String result_first = getString(R.string.result_first);
+        String result_second = getString(R.string.result_second);
+        Toast.makeText(MainActivity.this, result_first + " "
+                        + showResult + " " + result_second, Toast.LENGTH_LONG).show();
     }
 
 

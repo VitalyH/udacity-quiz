@@ -94,42 +94,60 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Question 4 with radiobuttons" />
+            android:text="Professor's McGonagall first name:" />
 
         <RadioGroup
+            android:id="@+id/fourthQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/sterva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Sterva" />
 
             <RadioButton
+                android:id="@+id/minerva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Minerva" />
+
+            <RadioButton
+                android:id="@+id/meduza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meduza" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Question 5 with radiobuttons" />
+            android:text="Draco Malfoy aunt's name is:" />
 
         <RadioGroup
+            android:id="@+id/fifthQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/bathilda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Bathilda Bagshot" />
 
             <RadioButton
+                android:id="@+id/narcissa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Narcissa Malfoy" />
+
+            <RadioButton
+                android:id="@+id/bellatrix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bellatrix Lestrange" />
         </RadioGroup>
 
         <Button
