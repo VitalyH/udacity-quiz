@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.android.quizapp.MainActivity"
+    android:id="@+id/contentMain"
     tools:showIn="@layout/activity_main">
 
     <LinearLayout
@@ -21,6 +22,7 @@
 
         <EditText
             android:id="@+id/questionOneInput"
+            android:freezesText="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="His name is..."
@@ -41,10 +43,11 @@
             android:text="Tom" />
 
         <CheckBox
+            android:id="@+id/john"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="James" />
+            android:text="John" />
 
         <CheckBox
             android:id="@+id/marvolo"
@@ -57,21 +60,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Question 3 with checkboxes" />
+            android:text="Harry Potter parents:" />
 
         <CheckBox
-            android:id="@+id/whipped_cream"
+            android:id="@+id/lily"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Answer 1" />
+            android:text="Lily" />
 
         <CheckBox
-            android:id="@+id/chocolate"
+            android:id="@+id/liliana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Answer 2" />
+            android:text="Liliana" />
+
+        <CheckBox
+            android:id="@+id/george"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="George" />
+
+        <CheckBox
+            android:id="@+id/james"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="James" />
 
         <TextView
             android:layout_width="wrap_content"
