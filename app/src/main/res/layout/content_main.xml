@@ -18,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Professor's Dumbledore name?" />
+            android:text="@string/first_question" />
 
         <EditText
             android:id="@+id/questionOneInput"
             android:freezesText="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="His name is..."
+            android:hint="@string/first_question_hint"
             android:inputType="textCapWords"
             android:padding="8dp" />
 
@@ -33,68 +33,68 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Lord Voldemort born name include:" />
+            android:text="@string/second_question" />
 
         <CheckBox
             android:id="@+id/tom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Tom" />
+            android:text="@string/second_q_1" />
 
         <CheckBox
             android:id="@+id/john"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="John" />
+            android:text="@string/second_q_2" />
 
         <CheckBox
             android:id="@+id/marvolo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Marvolo" />
+            android:text="@string/second_q_3" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Harry Potter parents:" />
+            android:text="@string/third_question" />
 
         <CheckBox
             android:id="@+id/lily"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Lily" />
+            android:text="@string/third_q_1" />
 
         <CheckBox
             android:id="@+id/liliana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Liliana" />
+            android:text="@string/third_q_2" />
 
         <CheckBox
             android:id="@+id/george"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="George" />
+            android:text="@string/third_q_3" />
 
         <CheckBox
             android:id="@+id/james"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="James" />
+            android:text="@string/third_q_4" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Professor's McGonagall first name:" />
+            android:text="@string/fourth_question" />
 
         <RadioGroup
             android:id="@+id/fourthQuestion"
@@ -105,26 +105,26 @@
                 android:id="@+id/sterva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sterva" />
+                android:text="@string/fourth_q_1" />
 
             <RadioButton
                 android:id="@+id/minerva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Minerva" />
+                android:text="@string/fourth_q_2" />
 
             <RadioButton
                 android:id="@+id/meduza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Meduza" />
+                android:text="@string/fourth_q_3" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Draco Malfoy aunt's name is:" />
+            android:text="@string/fifth_question" />
 
         <RadioGroup
             android:id="@+id/fifthQuestion"
@@ -135,19 +135,19 @@
                 android:id="@+id/bathilda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bathilda Bagshot" />
+                android:text="@string/fifth_q_1" />
 
             <RadioButton
                 android:id="@+id/narcissa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Narcissa Malfoy" />
+                android:text="@string/fifth_q_2" />
 
             <RadioButton
                 android:id="@+id/bellatrix"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bellatrix Lestrange" />
+                android:text="@string/fifth_q_3" />
         </RadioGroup>
 
         <Button
@@ -155,7 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="getResult"
-            android:text="Get Result" />
+            android:text="@string/result_button" />
 
     </LinearLayout>
 </ScrollView>

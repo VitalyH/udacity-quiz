@@ -4,6 +4,25 @@
     <string name="reset">Ok, let\'s try again...</string>
     <string name="action_message">Action</string>
     <string name="result_first">You got </string>
-    <string name="result_second"> questions right!</string>
-
+    <string name="result_second">questions right!</string>
+    <string name="result_button">Get Result</string>
+    <string name="first_question">Professor\'s Dumbledore name?</string>
+    <string name="first_question_hint">His name is...</string>
+    <string name="second_question">Lord\s Voldemort born name include:</string>
+    <string name="third_question">Harry Potter\'s parents names:</string>
+    <string name="fourth_question">Professor\'s McGonagall first name:</string>
+    <string name="fifth_question">Draco Malfoy aunt\'s name is:</string>
+    <string name="second_q_1">Tom</string>
+    <string name="second_q_2">John</string>
+    <string name="second_q_3">Marvolo</string>
+    <string name="third_q_1">Lily</string>
+    <string name="third_q_2">Liliana</string>
+    <string name="third_q_3">George</string>
+    <string name="third_q_4">James</string>
+    <string name="fourth_q_1">Sterva</string>
+    <string name="fourth_q_2">Minerva</string>
+    <string name="fourth_q_3">Meduza</string>
+    <string name="fifth_q_1">Bathilda Bagshot</string>
+    <string name="fifth_q_2">Narcissa Malfoy</string>
+    <string name="fifth_q_3">Bellatrix Lestrange</string>
 </resources>
