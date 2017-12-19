@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         // Toast with results
         String result_first = getString(R.string.result_first);
         String result_second = getString(R.string.result_second);
-        Toast.makeText(MainActivity.this, result_first + " "
+        Toast.makeText(this, result_first + " "
                         + showResult + " " + result_second, Toast.LENGTH_LONG).show();
     }
 

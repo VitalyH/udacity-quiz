@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.android.quizapp.MainActivity"
-    android:id="@+id/contentMain"
     tools:showIn="@layout/activity_main">
 
     <LinearLayout
@@ -17,8 +16,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/first_question" />
+            android:text="@string/first_question"
+            style="@style/QuestionStyle" />
 
         <EditText
             android:id="@+id/questionOneInput"
@@ -27,73 +26,73 @@
             android:layout_height="wrap_content"
             android:hint="@string/first_question_hint"
             android:inputType="textCapWords"
-            android:padding="8dp" />
+            style="@style/AnswersStyle" />
 
         <TextView
+            style="@style/QuestionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:text="@string/second_question" />
 
         <CheckBox
+            style="@style/AnswersStyle"
             android:id="@+id/tom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:text="@string/second_q_1" />
 
         <CheckBox
+            style="@style/AnswersStyle"
             android:id="@+id/john"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:text="@string/second_q_2" />
 
         <CheckBox
+            style="@style/AnswersStyle"
             android:id="@+id/marvolo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:text="@string/second_q_3" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            style="@style/QuestionStyle"
             android:text="@string/third_question" />
 
         <CheckBox
+            style="@style/AnswersStyle"
             android:id="@+id/lily"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:text="@string/third_q_1" />
 
         <CheckBox
             android:id="@+id/liliana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            style="@style/AnswersStyle"
             android:text="@string/third_q_2" />
 
         <CheckBox
             android:id="@+id/george"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            style="@style/AnswersStyle"
             android:text="@string/third_q_3" />
 
         <CheckBox
             android:id="@+id/james"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            style="@style/AnswersStyle"
             android:text="@string/third_q_4" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            style="@style/QuestionStyle"
             android:text="@string/fourth_question" />
 
         <RadioGroup
@@ -102,18 +101,21 @@
             android:layout_height="wrap_content">
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/sterva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fourth_q_1" />
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/minerva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fourth_q_2" />
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/meduza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +125,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            style="@style/QuestionStyle"
             android:text="@string/fifth_question" />
 
         <RadioGroup
@@ -132,18 +134,21 @@
             android:layout_height="wrap_content">
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/bathilda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fifth_q_1" />
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/narcissa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fifth_q_2" />
 
             <RadioButton
+                style="@style/AnswersStyle"
                 android:id="@+id/bellatrix"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
